@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<jdo xmlns="http://java.sun.com/xml/ns/jdo/jdo"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/jdo/jdo
+        http://java.sun.com/xml/ns/jdo/jdo_2_0.xsd">
+
+    <package name="com.sampleapp.data.dataobjects">
+
+
+        <class name="Blog" >
+            <inheritance strategy="new-table"/>
+			<field name="thread" persistence-modifier="persistent" field-type="com.sampleapp.data.dataobjects.Event, com.sampleapp.data.dataobjects.Comment">
+
+			</field>
+        </class>
+
+    </package>
+</jdo>

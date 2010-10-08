@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+	xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd"
+>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<title>Wicket Spring JDO</title>
+</head>
+<body>
+	<wicket:extend>
+	<h1>List of blogs</h1>
+	<form wicket:id="blogForm">
+		<fieldset>
+			<label>Title</label><input wicket:id="title" type="text" /><br/> 
+			<a wicket:id="submit">Save</a>
+		</fieldset>
+	</form>
+	<ul wicket:id="listContainer">
+		<li wicket:id="list"><span wicket:id="blogName" /> | <a wicket:id="show">view/edit</a> | <a wicket:id="delete">delete</a>
+		</li>
+	</ul>
+	</wicket:extend>
+</body>
+</html>
