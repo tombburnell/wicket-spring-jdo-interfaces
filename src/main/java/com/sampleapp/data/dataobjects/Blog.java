@@ -20,7 +20,8 @@ public class Blog extends DomainObject {
 	// Store blog items in 'thread'
 	// this is a list of items that implement 'BlogItem' interface
 	//@Persistent(types=" com.sampleapp.data.dataobjects")
-	@Persistent(types=Comment.class)
+
+	@Persistent
 	//. Comment,com.sampleapp.data.dataobjects.Event")
 	@Join
 	private ArrayList<BlogItem> thread = new ArrayList<BlogItem>();
